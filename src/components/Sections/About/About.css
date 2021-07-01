@@ -1,0 +1,162 @@
+.about{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+.container-child1{
+    margin-top: 12em;
+    margin-bottom: 6em;
+    text-align: center;
+}
+
+.heading1{
+    font-size: 1.6rem;
+    color: tomato;
+}
+
+.heading2{
+    font-size: 3.8rem;
+}
+
+.container-child2{
+    display: flex;
+    text-align: center;
+    margin: 0px 16em;
+    margin-bottom: 10em;
+}
+
+.first-head{
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 0.6em;
+    margin-top: 1em;
+}
+
+.cont{
+    font-size: 1.5rem;
+    color: rgb(102, 101, 101);
+}
+
+.child{
+    padding: 2em 2em;
+    transition: 0.5s;
+}
+
+.icons{
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    padding: 2em;
+    background-color: rgb(46, 44, 44);
+    color: tomato;
+    transition: color 0.3s ease;
+}
+
+.child:hover.child .icons{
+    color: white;
+    background-color: tomato;
+}
+
+@media only screen and (max-width:1296px) {
+
+    .container-child2{
+        margin: 0px 16px;
+        margin-bottom: 8em;
+    }
+    
+}
+
+@media only screen and (max-width:1116px) {
+
+    .container-child2{
+        flex-wrap: wrap;
+        margin: 0px 10px;
+        margin-bottom: 6em;
+    }
+
+    .child{
+        width: 50%;
+    }
+    
+}
+
+@media only screen and (max-width:716px) {
+
+    .container-child2{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        /* margin: 0px 10px;
+        margin-bottom: 6em; */
+    }
+
+    .child{
+        width: 70%;
+    }
+    
+}
+
+@media only screen and (max-width:600px) {
+
+    .heading2{
+        font-size: 3rem;
+        font-weight: 500;
+    }
+
+    .container-child1{
+        margin-bottom: 2em;
+    }
+
+    .container-child2{
+        flex-direction: column;
+        margin: 0px 0px;
+        margin-bottom: 6em;
+    }
+
+    .child{
+        margin: 2em;
+    }
+    
+}
+
+@media only screen and (max-width:370px) {
+
+    .heading1{
+        font-size: 1.2rem;
+    }
+    
+    .heading2{
+        font-size: 1.8rem;
+    }
+
+    .container-child1{
+        margin-left: 1em;
+        margin-bottom: 1.5em;
+        text-align: left;
+    }
+
+    .container-child2{
+        margin-bottom: 4em;
+    }
+
+    .child{
+        margin: 1.5em;
+        padding: 1.5em;
+    }
+
+    .first-head{
+        font-size: 1.6rem;
+        margin-bottom: 0.6em;
+        margin-top: 1em;
+    }
+
+    .cont{
+        font-size: 1.5rem;
+    }
+}

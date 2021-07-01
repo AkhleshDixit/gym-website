@@ -1,0 +1,169 @@
+.classes{
+    background-color: rgb(31, 30, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+.classescontainer1{
+    margin-top: 10em;
+    margin-bottom: 8em;
+    text-align: center;
+}
+
+.fsthead{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: tomato;
+}
+
+.secondhead{
+    font-size: 3.5rem;
+    color: white;
+    font-weight: 500;
+}
+
+.classescontainer2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 16em;
+    margin-bottom: 9em;
+}
+
+.classe{
+    width: 28.33%;
+    margin: 3em;
+    overflow: hidden;
+}
+
+.classe .picdiv img {
+    min-width: 100%;
+}
+
+.images {
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.content{
+    position: relative;
+    background-color: rgb(12, 12, 12);
+    padding: 1em 3em;
+    padding-bottom: 2em;
+    z-index: 1;
+}
+
+.content::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    /* width: 345px; */
+    width: 340px;
+    top: -50%;
+    left: 0%;
+    background-color: rgb(12, 12, 12);
+    border-top: 5px solid rgb(65, 65, 65);
+    /* transform: rotate(-5deg); */
+    transform: skewY(-5deg);
+    z-index: -1;
+}
+
+.head1{
+    color: tomato;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.head2{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+@media only screen and (max-width:1296px) {
+    .classescontainer2{
+        margin: 0px 8em;
+    }
+    
+    .classe{
+        width: 38%;
+    }
+}
+
+@media only screen and (max-width:935px) {
+    .head2{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width:815px) {
+    .head1{
+        font-size: 1.15rem;
+    }
+    .head2{
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 747px) {
+    .classescontainer2{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 0px 0em;
+        margin-bottom: 9em;
+    }
+
+    .classe{
+        width: 90%;
+        margin: 1.5em 1em;
+        overflow: hidden;
+    }
+
+    .content::after{
+        width: 660px;
+    }
+}
+
+@media only screen and (max-width:390px) {
+    .classescontainer1{
+        margin-top: 7em;
+        margin-bottom: 5em;
+        text-align: left;
+        margin-left: 1em;
+    }
+
+    .classescontainer2{
+        margin-bottom: 5em;
+    }
+
+    .fsthead{
+        font-size: 1.2rem;
+    }
+
+    .secondhead{
+        font-size: 2.2rem;
+    }
+
+    .classe{
+        width: 85%;
+    }
+
+    .content{
+        padding: 1em 1em;
+        padding-bottom: 1em;
+    }
+
+    .head1 {
+        font-size: 1rem;
+    }
+
+    .head2{
+        font-size: 1.5rem;
+    }
+}

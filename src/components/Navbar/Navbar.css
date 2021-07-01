@@ -1,0 +1,192 @@
+.navbar{
+    position: relative;
+    z-index: 20;
+}
+
+.nav-container{
+    background-color: transparent;
+    color: white;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 8%;
+    padding: 0.4em;
+    padding-top: 5em;
+    transition: all 0.2s ease-out;
+}
+
+.hamburger{
+    display: none;
+    font-size: 2.5rem;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-bottom: 0.1em;
+    border: 2px solid white;
+}
+
+.fas{
+    cursor:pointer;
+}
+
+.hamburger .fa-bars{
+    transform: rotate(180deg);
+    transition: transform 200ms ease-in-out;
+
+}
+
+.hamburger .fa-times{
+    transform: rotate(360deg);
+    transition: transform 200ms ease-in-out;
+}
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.logo span{
+color: rgba(255, 68, 54);
+}
+
+.menu-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu-items a{
+    cursor: pointer;
+    padding: 0.4em 1em;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.menu-items a:hover{
+    color: rgba(255, 68, 54);
+    text-decoration: line-through dotted;
+}
+
+.menu-items .nav-btn{
+    font-size: 1.6rem;
+    margin-left: 2em;
+    color: white;
+    background-color: rgba(255, 68, 54);
+    text-decoration: none;
+    padding: 0.7em 2em;
+    border-radius: 0.4em;
+}
+
+.menu-items .nav-btn:hover{
+    background-color: rgb(255, 131, 123);
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:1116px) {
+    .menu-items a{
+        font-size: 1.3rem;
+    }
+
+    .menu-items .nav-btn{
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width:935px) {
+    .menu-items a{
+        font-size: 1.1rem;
+    }
+
+    .menu-items .nav-btn{
+        font-size: 1.1rem;
+    }
+
+    .logo{
+        font-size: 2.2rem;
+    }
+}
+
+@media only screen and (max-width:800px){
+
+    .nav-container{
+        justify-content: space-between;
+        padding: 0.4em 2em;
+        background-color: transparent;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .menu-items{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        right: 0%;
+        top: 100%;
+        background-color: red;
+        padding: 1rem;
+        width: 100%;
+        transition: all 500ms ease-in-out;
+    }
+
+    .menu-items a{
+        cursor: pointer;
+        font-weight: 500;
+        padding: 1em 5em;
+        font-size: 1.3rem;
+    }
+
+    .menu-items a:hover{
+        background-color: white;
+        color: black;
+    }
+
+    .menu-items .nav-btn{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 1.5em auto;
+        padding: 1em 5em;
+        background-color: black;
+    }
+
+    .menu-items .nav-btn:hover{
+        background-color: rgb(77, 76, 76);
+        color: white;
+    }
+
+    .menu-items.close{
+        right: -100%;
+        transition: all 500ms ease-in-out;
+    }
+}
+
+@media only screen and (max-width:370px) {
+    .logo{
+        font-size: 1.8rem;
+    }
+
+    .nav-container{
+        padding: 0.4em 0.7em !important;
+    }
+
+    .hamburger{
+        font-size: 2rem;
+        border: 1px solid white;
+    }
+
+    .menu-items{
+        padding: 1em 0em;
+    }
+
+    .menu-items a {
+        font-size: 1rem;
+    }
+
+    .menu-items .nav-btn {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,97 @@
+.home{
+    background-image: url("../../../assests/images/img18.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    width: 100%;
+    margin: auto;
+}
+
+.home-container{
+    margin-top: 20em; 
+    margin-right: 16em;
+}
+
+.head1{
+    font-size: 2rem;
+}
+
+.head2{
+    font-size: 8rem;
+}
+
+.home-span{
+    color: tomato;
+    font-size: 8rem;
+}
+
+.get-info-btn{
+    color: white;
+    text-decoration: none;
+    background-color: tomato;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-top: 2em;
+    padding: 1em 1.6em;
+    
+}
+
+@media only screen and (max-width:900px) {
+    .home-container{
+        margin-top: 16em;
+        margin-right: 3em;
+        margin-left: 8em;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    
+    .home-container{
+        margin-top: 14em; 
+        margin-right: 2em;
+        margin-left: 2em;
+    }
+
+    .head1{
+        font-size: 2rem;
+    }
+    
+    .head2{
+        font-size: 5.3rem;
+    }
+    
+    .home-span{
+        font-size: 5.3rem;
+    }
+    
+    .get-info-btn{
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media only screen and (max-width: 370px) {
+    
+    .head1{
+        font-size: 2rem;
+    }
+    
+    .head2{
+        font-size: 4rem;
+    }
+    
+    .home-span{
+        font-size: 4rem;
+    }
+    
+    .get-info-btn{
+        font-size: 1.5rem;
+    }
+
+}
